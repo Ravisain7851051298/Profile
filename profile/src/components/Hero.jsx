@@ -1,51 +1,93 @@
 import { motion } from 'framer-motion'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import '../styles/hero.css'
+import profileImage from '../assets/profile.png'
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="hero-content">
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="intro-text"
+    <section className="hero-container">
+      <div className="hero-grid">
+        <motion.div 
+          className="hero-left"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          Hi, my name is
-        </motion.p>
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="name"
+          <div className="title-container">
+            <motion.span 
+              className="subtitle"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              👋 Welcome to my portfolio
+            </motion.span>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+            >
+              Transforming Ideas into
+              <span className="highlight"> Digital Reality</span>
+            </motion.h1>
+            <motion.div 
+              className="role"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              <span className="tag">MERN Stack Developer</span>
+              <span className="tag">UI/UX Designer</span>
+            </motion.div>
+          </div>
+
+          <motion.div 
+            className="cta-container"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+          >
+            <button className="cta-primary">View My Work</button>
+            <button className="cta-secondary">Download CV</button>
+          </motion.div>
+
+          <motion.div 
+            className="social-links"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
+            <a href="https://github.com/Ravisain7851051298" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/Ravisain75688" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.linkedin.com/in/ravisain75688" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+          </motion.div>
+        </motion.div>
+
+        <motion.div 
+          className="hero-right"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
         >
-          Your Name.
-        </motion.h1>
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="title"
-        >
-          I build things for the web.
-        </motion.h2>
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="description"
-        >
-          I'm a full-stack developer specializing in building exceptional digital experiences using the MERN stack.
-        </motion.p>
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="cta-button"
-        >
-          Check out my work!
-        </motion.button>
+          <div className="image-container">
+            <div className="image-backdrop"></div>
+            <motion.img 
+              src={profileImage} 
+              alt="Ravi Sain"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
+        </motion.div>
       </div>
-    </div>
+      
+    </section>
   )
 }
 
