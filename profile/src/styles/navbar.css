@@ -1,0 +1,133 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: background 0.5s ease;
+}
+
+.navbar:hover {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* Navbar Content */
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #38bdf8;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #facc15;
+  transform: scale(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links li a:hover {
+  color: #facc15;
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links li a.active {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 12px #38bdf8;
+}
+
+/* Mobile Menu Icon */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #e2e8f0;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #38bdf8;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 60%;
+  background: #1e293b;
+  box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  transition: all 0.5s ease;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.mobile-menu li {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.mobile-menu li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu li a:hover {
+  color: #38bdf8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}

@@ -5,7 +5,7 @@ import profileImage from '../assets/profile.png'
 
 const Hero = () => {
   return (
-    <section className="hero-container">
+    <section className="hero-container" id="hero">
       <div className="hero-grid">
         <motion.div 
           className="hero-left"

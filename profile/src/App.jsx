@@ -5,6 +5,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import './styles/app.css'
+import Navbar from './components/Navbar'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <div className="app">
-     
+      <Navbar />
       <Hero />
       <About />
       <Skills />
