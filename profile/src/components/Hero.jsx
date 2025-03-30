@@ -63,7 +63,7 @@ const Hero = () => {
             <a href="https://linkedin.com/in/Ravisain75688" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://www.linkedin.com/in/ravisain75688" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/ravi_sain04" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
           </motion.div>
