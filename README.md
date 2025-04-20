@@ -2,7 +2,9 @@
 
 A modern, responsive portfolio website built with React.js and Framer Motion.
 
-![Portfolio Preview](./preview.png)
+## 🚀 Live Demo
+
+[View Portfolio](https://profile-tan-three.vercel.app/)
 
 ## 🛠️ Technologies Used
 
@@ -21,9 +23,6 @@ A modern, responsive portfolio website built with React.js and Framer Motion.
 - 🔍 Project filtering
 - 📊 Skills visualization
 
-## 🚀 Live Demo
-
-[View Portfolio](https://profile-tan-three.vercel.app/)
 
 ## 💻 Installation and Setup
 
