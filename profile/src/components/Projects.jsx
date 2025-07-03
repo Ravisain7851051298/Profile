@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: "Phone verification",
       description: "A full-stack platform built with MERN stack featuring user authentication via phone number and otp and provide profile data using custom hooks and APIs ",
-      image: "/Phone-verification.png",
+      image: "../assets/Phone-verification.png",
       tags: ["React", "Node.js", "MongoDB", "Express" , "Context" , "APIs" , "Twilio","tailwind"],
       category: "fullstack",
       github: "https://github.com/Ravisain7851051298/phone_verification",
@@ -28,8 +28,8 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description: "A modern portfolio website showcasing my projects and skills with smooth animations.",
-      image: "/portfolio-preview.png",
-      tags: ["React", "Framer Motion"],
+      image: "../assets/portfolio-preview.png",
+      tags: ["React", "Framer Motion", "tailwind", "single page routing"],
       category: "frontend",
       github: "https://github.com/Ravisain7851051298/Profile",
       live: "https://profile-tan-three.vercel.app/"
