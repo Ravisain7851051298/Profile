@@ -8,22 +8,22 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform built with MERN stack featuring user authentication, product management, and payment integration.",
-      image: "/ecommerce-preview.png",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
+      title: "Phone verification",
+      description: "A full-stack platform built with MERN stack featuring user authentication via phone number and otp and provide profile data using custom hooks and APIs ",
+      image: "/Phone-verification.png",
+      tags: ["React", "Node.js", "MongoDB", "Express" , "Context" , "APIs" , "Twilio","tailwind"],
       category: "fullstack",
-      github: "https://github.com/yourusername/ecommerce",
-      live: "https://your-ecommerce.com"
+      github: "https://github.com/Ravisain7851051298/phone_verification",
+      live: "https://github.com/Ravisain7851051298/phone_verification"
     },
     {
-      title: "Task Management App",
-      description: "A responsive task management application with drag-and-drop functionality and real-time updates.",
-      image: "/taskapp-preview.png",
-      tags: ["React", "Redux", "Node.js"],
-      category: "frontend",
-      github: "https://github.com/yourusername/taskapp",
-      live: "https://your-taskapp.com"
+      title: "ChatGPT-mini",
+      description: "A responsive chatGPT mini web application that intract with ChatGPT model 4.1 and then responce responce is clean and simple text based only..",
+      image: "../assets/chatgpt-mini.png",
+      tags: ["React", "Redux", "Node.js" , "APIs", "openai API", "tailwind"],
+      category: "fullstack",
+      github: "https://github.com/Ravisain7851051298/chatGPT-mini",
+      live: "https://chat-gpt-mini-iota.vercel.app/"
     },
     {
       title: "Portfolio Website",
@@ -31,8 +31,8 @@ const Projects = () => {
       image: "/portfolio-preview.png",
       tags: ["React", "Framer Motion"],
       category: "frontend",
-      github: "https://github.com/yourusername/portfolio",
-      live: "https://your-portfolio.com"
+      github: "https://github.com/Ravisain7851051298/Profile",
+      live: "https://profile-tan-three.vercel.app/"
     }
   ]
 
