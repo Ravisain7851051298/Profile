@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <section className="contact-section" id="contact">
-      <motion.div 
+      <motion.div
         className="contact-container"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-content">
-          <motion.div 
+          <motion.div
             className="contact-info"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,29 +47,29 @@ const Contact = () => {
           >
             <h3>Let's Connect</h3>
             <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-            
+
             <div className="contact-details">
               <div className="contact-item">
                 <FaEnvelope />
-                <span>ravisain7851051298@gmail.com</span>
+                <a href='mailto:ravisain7851051298@gmail.com' class="email-link">ravisain7851051298@gmail.com</a>
               </div>
               <div className="contact-item">
                 <FaPhone />
-                <span>+91 7851051298</span>
+                <a href="tel:%2B7851051298" class="phone-link">+91 78510 51298</a>
               </div>
             </div>
 
             <div className="social-links">
-              <motion.a 
-                href="https://github.com/Ravisain7851051298" 
+              <motion.a
+                href="https://github.com/Ravisain7851051298"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
               >
                 <FaGithub />
               </motion.a>
-              <motion.a 
-                href="https://linkedin.com/in/Ravisain75688" 
+              <motion.a
+                href="https://linkedin.com/in/Ravisain75688"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -78,52 +78,6 @@ const Contact = () => {
               </motion.a>
             </div>
           </motion.div>
-
-          <motion.form 
-            className="contact-form"
-            onSubmit={handleSubmit}
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
-            <motion.button 
-              type="submit"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Send Message
-            </motion.button>
-          </motion.form>
         </div>
       </motion.div>
     </section>

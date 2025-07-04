@@ -121,6 +121,22 @@
   transition: transform 0.3s ease;
 }
 
+.phone-link, .email-link {
+  display: inline-block;
+  color: #fff;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.phone-link:hover, .email-link:hover {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
 @media (max-width: 768px) {
   .contact-content {
     grid-template-columns: 1fr;

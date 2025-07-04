@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import '../styles/hero.css'
-import profileImage from '../assets/profile.png'
+import profileImage from '/profile.png'
 
 const Hero = () => {
   return (
@@ -37,7 +37,7 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
             >
               <span className="tag">MERN Stack Developer</span>
-              <span className="tag">UI/UX Designer</span>
+              
             </motion.div>
           </div>
 
@@ -46,9 +46,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-          >
+          >  
+            <a href='https://www.linkedin.com/services/page/31576332a01a741324/'>
             <button className="cta-primary">View My Work</button>
+            </a>
+            <a href="/myCV.pdf">
             <button className="cta-secondary">Download CV</button>
+            </a>
           </motion.div>
 
           <motion.div 
@@ -86,7 +90,6 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-      
     </section>
   )
 }
