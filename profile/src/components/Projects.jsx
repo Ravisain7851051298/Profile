@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import '../styles/projects.css'
+import chatGPT from "../assets/chatgpt-mini.png"
 
 const Projects = () => {
   const [filter, setFilter] = useState('all')
@@ -19,7 +20,7 @@ const Projects = () => {
     {
       title: "ChatGPT-mini",
       description: "A responsive chatGPT mini web application that intract with ChatGPT model 4.1 and then responce responce is clean and simple text based only..",
-      image: "../assets/chatgpt-mini.png",
+      image: {chatGPT},
       tags: ["React", "Redux", "Node.js" , "APIs", "openai API", "tailwind"],
       category: "fullstack",
       github: "https://github.com/Ravisain7851051298/chatGPT-mini",
@@ -90,7 +91,7 @@ const Projects = () => {
                 layout
               >
                 <div className="project-image">
-                  <img src={project.image} alt={project.title} />
+                  <img src={} alt={project.title} />
                   <div className="project-overlay">
                     <motion.a 
                       href={project.github}
