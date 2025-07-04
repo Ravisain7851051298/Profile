@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import '../styles/projects.css'
-import chatGPT from "../assets/chatgpt-mini.png"
+
 
 const Projects = () => {
   const [filter, setFilter] = useState('all')
@@ -11,7 +11,7 @@ const Projects = () => {
     {
       title: "Phone verification",
       description: "A full-stack platform built with MERN stack featuring user authentication via phone number and otp and provide profile data using custom hooks and APIs ",
-      image: "../assets/Phone-verification.png",
+      image: "/Phone-verification.png",
       tags: ["React", "Node.js", "MongoDB", "Express" , "Context" , "APIs" , "Twilio","tailwind"],
       category: "fullstack",
       github: "https://github.com/Ravisain7851051298/phone_verification",
@@ -20,7 +20,7 @@ const Projects = () => {
     {
       title: "ChatGPT-mini",
       description: "A responsive chatGPT mini web application that intract with ChatGPT model 4.1 and then responce responce is clean and simple text based only..",
-      image: {chatGPT},
+      image: "/chatgpt-mini.png",
       tags: ["React", "Redux", "Node.js" , "APIs", "openai API", "tailwind"],
       category: "fullstack",
       github: "https://github.com/Ravisain7851051298/chatGPT-mini",
@@ -29,7 +29,7 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description: "A modern portfolio website showcasing my projects and skills with smooth animations.",
-      image: "../assets/portfolio-preview.png",
+      image: "/portfolio-preview.png",
       tags: ["React", "Framer Motion", "tailwind", "single page routing"],
       category: "frontend",
       github: "https://github.com/Ravisain7851051298/Profile",
@@ -91,7 +91,7 @@ const Projects = () => {
                 layout
               >
                 <div className="project-image">
-                  <img src={} alt={project.title} />
+                  <img src={project.image} alt={project.title} />
                   <div className="project-overlay">
                     <motion.a 
                       href={project.github}

@@ -23,34 +23,38 @@ A modern, responsive portfolio website built with React.js and Framer Motion.
 - 🔍 Project filtering
 - 📊 Skills visualization
 
-
 ## 💻 Installation and Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Ravisain7851051298/Profile.git
 ```
 
-2. Navigate to the project directory:
+2.Navigate to the project directory:
+
 ```bash
 cd Profile
 ```
 
-3. Install dependencies:
+3.Install dependencies:
+
 ```bash
 npm install
 ```
 
-4. Start the development server:
+4.Start the development server:
+
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+5.Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ## 📂 Project Structure
 
-```
+```bash
+
 Profile/
 ├── src/
 │   ├── components/
@@ -68,6 +72,7 @@ Profile/
 │   ├── assets/
 │   └── App.jsx
 └── public/
+
 ```
 
 ## 🎯 Features Overview
@@ -80,7 +85,7 @@ Profile/
 
 ## 📞 Contact Information
 
-- 📧 Email: ravisain7851051298@gmail.com
+- 📧 Email:ravisain7851051298@gmail.com
 - 💼 LinkedIn: [Ravi Sain](https://linkedin.com/in/Ravisain75688)
 - 🐱 GitHub: [Ravisain7851051298](https://github.com/Ravisain7851051298)
 
